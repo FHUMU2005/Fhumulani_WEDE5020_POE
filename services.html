@@ -1,11 +1,264 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+    <!-- Sets the character encoding for the website -->
     <meta charset="UTF-8">
+
+    <!-- Makes the website responsive on phones, tablets, and computers -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+
+    <!-- The title displayed on the browser tab -->
+    <title>Our Services</title>
+
+    <style>
+        /* Removes the default margin and sets the main font */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        /* Styles the navigation/header section */
+        header {
+            background-color: #222;
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* Styles the navigation links */
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 17px;
+        }
+
+        /* Changes the link color when the mouse is placed over it */
+        nav a:hover {
+            color: #00bcd4;
+        }
+
+        /* Main services section */
+        .services {
+            width: 90%;
+            max-width: 1000px;
+            margin: 50px auto;
+            text-align: center;
+        }
+
+        /* Main heading */
+        .services h1 {
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+
+        /* Introduction paragraph */
+        .services > p {
+            font-size: 18px;
+            color: #666;
+        }
+
+        /* Holds all the service cards */
+        .service-container {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            flex-wrap: wrap;
+            margin-top: 40px;
+        }
+
+        /* Individual service card */
+        .service-card {
+            background-color: white;
+            width: 280px;
+            padding: 25px;
+            border-radius: 10px;
+
+            /* Adds a small shadow around each card */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+            /* Makes the hover effect smooth */
+            transition: transform 0.3s;
+        }
+
+        /* Moves the card slightly upward when the mouse is over it */
+        .service-card:hover {
+            transform: translateY(-5px);
+        }
+
+        /* Service card headings */
+        .service-card h2 {
+            color: #00bcd4;
+        }
+
+        /* Service card descriptions */
+        .service-card p {
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+        /* Styles the buttons */
+        .service-card button {
+            background-color: #00bcd4;
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 15px;
+        }
+
+        /* Changes the button color when the mouse is over it */
+        .service-card button:hover {
+            background-color: #0097a7;
+        }
+
+        /* Footer section */
+        footer {
+            background-color: #222;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 50px;
+        }
+    </style>
 </head>
+
 <body>
-    
+
+    <!-- =========================
+         WEBSITE HEADER
+         ========================= -->
+    <header>
+
+        <!-- Navigation menu -->
+        <nav>
+            <!-- Link to the home page -->
+            <a href="index.html">Home</a>
+
+            <!-- Link to the about page -->
+            <a href="about.html">About</a>
+
+            <!-- Link to the services page -->
+            <a href="services.html">Services</a>
+
+            <!-- Link to the contact page -->
+            <a href="contact.html">Contact</a>
+        </nav>
+
+    </header>
+
+
+    <!-- =========================
+         MAIN SERVICES SECTION
+         ========================= -->
+    <main>
+
+        <section class="services">
+
+            <!-- Main heading of the page -->
+            <h1>Our Services</h1>
+
+            <!-- Short description -->
+            <p>
+                We provide high-quality services to help you achieve
+                your goals.
+            </p>
+
+
+            <!-- Container for all service cards -->
+            <div class="service-container">
+
+
+                <!-- =========================
+                     SERVICE 1
+                     ========================= -->
+                <div class="service-card">
+
+                    <!-- Service name -->
+                    <h2>Web Design</h2>
+
+                    <!-- Service description -->
+                    <p>
+                        We create modern, attractive, and responsive
+                        websites for businesses and individuals.
+                    </p>
+
+                    <!-- Service button -->
+                    <button>Learn More</button>
+
+                </div>
+
+
+                <!-- =========================
+                     SERVICE 2
+                     ========================= -->
+                <div class="service-card">
+
+                    <h2>Web Development</h2>
+
+                    <p>
+                        We develop fast, secure, and user-friendly
+                        websites using modern web technologies.
+                    </p>
+
+                    <button>Learn More</button>
+
+                </div>
+
+
+                <!-- =========================
+                     SERVICE 3
+                     ========================= -->
+                <div class="service-card">
+
+                    <h2>Digital Marketing</h2>
+
+                    <p>
+                        We help businesses attract more customers
+                        through effective online marketing strategies.
+                    </p>
+
+                    <button>Learn More</button>
+
+                </div>
+
+
+                <!-- =========================
+                     SERVICE 4
+                     ========================= -->
+                <div class="service-card">
+
+                    <h2>Graphic Design</h2>
+
+                    <p>
+                        We create professional logos, posters,
+                        advertisements, and other graphic designs.
+                    </p>
+
+                    <button>Learn More</button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- =========================
+         WEBSITE FOOTER
+         ========================= -->
+    <footer>
+
+        <!-- Copyright information -->
+        <p>&copy; 2026 My Website. All rights reserved.</p>
+
+    </footer>
+
 </body>
+
 </html>
