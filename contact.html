@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Defines the character encoding used by the webpage -->
+    <meta charset="UTF-8">
+
+    <!-- Makes the website responsive on phones, tablets, and computers -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- The title displayed on the browser tab -->
+    <title>Contact Us</title>
+
+    <style>
+        /* ==============================
+           GENERAL PAGE STYLING
+           ============================== */
+
+        /* Removes the default margin and sets the font */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+
+        /* ==============================
+           HEADER AND NAVIGATION
+           ============================== */
+
+        /* Styles the website header */
+        header {
+            background-color: #222;
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* Styles the navigation links */
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 17px;
+        }
+
+        /* Changes the link color when the mouse is over it */
+        nav a:hover {
+            color: #00bcd4;
+        }
+
+
+        /* ==============================
+           CONTACT SECTION
+           ============================== */
+
+        /* Creates the main contact container */
+        .contact {
+            width: 90%;
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 40px;
+            background-color: white;
+            border-radius: 10px;
+
+            /* Adds a shadow around the contact box */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Styles the main heading */
+        .contact h1 {
+            text-align: center;
+            color: #222;
+            font-size: 36px;
+        }
+
+        /* Styles the introduction paragraph */
+        .contact-intro {
+            text-align: center;
+            font-size: 18px;
+            margin-bottom: 30px;
+        }
+
+
+        /* ==============================
+           CONTACT INFORMATION
+           ============================== */
+
+        /* Styles the contact information area */
+        .contact-info {
+            background-color: #f4f4f4;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 30px;
+        }
+
+        /* Removes extra space from the first heading */
+        .contact-info h2 {
+            margin-top: 0;
+        }
+
+        /* Styles contact information paragraphs */
+        .contact-info p {
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+
+        /* ==============================
+           CONTACT FORM
+           ============================== */
+
+        /* Makes the form display in a vertical layout */
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Styles the form labels */
+        label {
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        /* Styles the text fields */
+        input,
+        textarea {
+            padding: 12px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+
+            /* Makes sure padding does not increase the width */
+            box-sizing: border-box;
+        }
+
+        /* Sets the height of the message box */
+        textarea {
+            height: 150px;
+
+            /* Allows the user to resize the message box */
+            resize: vertical;
+        }
+
+        /* Styles the submit button */
+        button {
+            padding: 12px;
+            background-color: #00bcd4;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 17px;
+            cursor: pointer;
+        }
+
+        /* Changes the button color when the mouse is over it */
+        button:hover {
+            background-color: #0097a7;
+        }
+
+
+        /* ==============================
+           FOOTER
+           ============================== */
+
+        /* Styles the website footer */
+        footer {
+            background-color: #222;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- =================================
+         WEBSITE HEADER
+         ================================= -->
+    <header>
+
+        <!-- Navigation menu -->
+        <nav>
+
+            <!-- Link to the Home page -->
+            <a href="index.html">Home</a>
+
+            <!-- Link to the About page -->
+            <a href="about.html">About</a>
+
+            <!-- Link to the Services page -->
+            <a href="services.html">Services</a>
+
+            <!-- Link to the Contact page -->
+            <a href="contact.html">Contact</a>
+
+        </nav>
+
+    </header>
+
+
+    <!-- =================================
+         MAIN CONTACT SECTION
+         ================================= -->
+    <main>
+
+        <section class="contact">
+
+            <!-- Main page heading -->
+            <h1>Contact Us</h1>
+
+            <!-- Short introduction -->
+            <p class="contact-intro">
+                We would love to hear from you.
+                Please use the information below or
+                send us a message using the form.
+            </p>
+
+
+            <!-- =================================
+                 CONTACT INFORMATION
+                 ================================= -->
+            <div class="contact-info">
+
+                <h2>Get In Touch</h2>
+
+                <!-- Email address -->
+                <p>
+                    <strong>Email:</strong>
+                    example@email.com
+                </p>
+
+                <!-- Phone number -->
+                <p>
+                    <strong>Phone:</strong>
+                    +27 12 345 6789
+                </p>
+
+                <!-- Business address -->
+                <p>
+                    <strong>Address:</strong>
+                    Johannesburg, South Africa
+                </p>
+
+            </div>
+
+
+            <!-- =================================
+                 CONTACT FORM
+                 ================================= -->
+            <form>
+
+                <!-- Name field -->
+                <label for="name">Full Name:</label>
+
+                <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    placeholder="Enter your full name"
+                    required
+                >
+
+
+                <!-- Email field -->
+                <label for="email">Email Address:</label>
+
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="Enter your email address"
+                    required
+                >
+
+
+                <!-- Subject field -->
+                <label for="subject">Subject:</label>
+
+                <input
+                    type="text"
+                    id="subject"
+                    name="subject"
+                    placeholder="Enter the subject"
+                    required
+                >
+
+
+                <!-- Message field -->
+                <label for="message">Message:</label>
+
+                <textarea
+                    id="message"
+                    name="message"
+                    placeholder="Write your message here..."
+                    required
+                ></textarea>
+
+
+                <!-- Submit button -->
+                <button type="submit">
+                    Send Message
+                </button>
+
+            </form>
+
+        </section>
+
+    </main>
+
+
+    <!-- =================================
+         WEBSITE FOOTER
+         ================================= -->
+    <footer>
+
+        <!-- Copyright information -->
+        <p>
+            &copy; 2026 My Website. All rights reserved.
+        </p>
+
+    </footer>
+
+</body>
+
+</html>
